@@ -1,0 +1,71 @@
+.head {
+  margin-top: var(--space-8);
+}
+
+.statement {
+  max-width: 30ch;
+  margin-top: var(--space-5);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 500;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.groups {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+}
+
+.h3 {
+  font-size: 1.35rem;
+  font-weight: 650;
+}
+
+.addOn {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: start;
+  gap: var(--space-5);
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px dashed rgb(35 28 21 / 0.25);
+}
+
+.notes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-6);
+}
+
+.note p {
+  color: var(--ink-soft);
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: auto;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .addOn,
+  .notes {
+    grid-template-columns: 1fr;
+  }
+}

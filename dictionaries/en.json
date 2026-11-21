@@ -1,0 +1,561 @@
+{
+  "meta": {
+    "title": "KNETRA | We find where your business leaks money, then plug it",
+    "description": "KNETRA builds AI agents, automations and websites that stop the costly manual work in your business. Built in Hyderabad."
+  },
+  "nav": {
+    "aiAgents": "AI agents",
+    "automation": "Automation",
+    "creativeWeb": "Creative & web",
+    "deskBuddy": "DeskBuddy",
+    "pricing": "Pricing",
+    "about": "About",
+    "book": "Book a consultation",
+    "menu": "Menu",
+    "close": "Close menu",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "We find where your business leaks money. Then we plug it.",
+    "lead": "AI agents, automations and websites, built around your own numbers. In English, Telugu and Hindi.",
+    "book": "Book a free consultation",
+    "demo": "Try the demo",
+    "reportTitle": "A typical week at a clinic",
+    "reportNote": "Illustrative example, not client data.",
+    "rows": [
+      {
+        "task": "Calls missed after 7 pm",
+        "value": "₹38,000 / month"
+      },
+      {
+        "task": "Orders retyped into Tally",
+        "value": "42 hours / month"
+      },
+      {
+        "task": "Payments chased by hand",
+        "value": "₹61,000 pending"
+      }
+    ],
+    "totalLabel": "Could be recovered",
+    "total": "₹1,20,000 / month",
+    "illustrative": "Illustrative"
+  },
+  "calc": {
+    "title": "What is your business losing?",
+    "lead": "Put in rough numbers. Nothing is sent anywhere; the estimate is worked out on this page.",
+    "missed": "Enquiries missed or answered late, per day",
+    "value": "Average value of one customer (₹)",
+    "hours": "Staff hours per day on repetitive work",
+    "rate": "Cost of one staff hour (₹)",
+    "empty": "Fill in the numbers to see your estimate.",
+    "invalid": "Use whole numbers of 0 or more in every box.",
+    "resultLabel": "Estimated leak",
+    "perMonth": "per month",
+    "fromMissed": "from missed enquiries",
+    "fromHours": "from manual work",
+    "assumption": "Assumes 26 working days and that 1 in 5 missed enquiries would have become a customer. Your consultation replaces this with your real numbers.",
+    "cta": "Get your real number",
+    "example": "Example numbers. Change them to your own."
+  },
+  "demo": {
+    "title": "Ask a clinic's AI assistant",
+    "lead": "This assistant answers only from the clinic's own documents and hands over to staff when it should.",
+    "label": "Demo · sample clinic, scripted answers",
+    "botName": "Sunrise Clinic assistant",
+    "greeting": "Hello! I can answer questions about Sunrise Clinic's timings, fees and appointments.",
+    "prompt": "Pick a question:",
+    "typing": "Assistant is typing",
+    "restart": "Start again",
+    "endTitle": "Want one for your business?",
+    "endCta": "Book a free consultation",
+    "script": [
+      {
+        "q": "What are the OPD timings?",
+        "a": "OPD runs Monday to Saturday, 9 am to 1 pm and 5 pm to 8 pm. Sunday is emergency only.",
+        "source": "Source: Clinic FAQ, page 1"
+      },
+      {
+        "q": "How much is a consultation?",
+        "a": "A general consultation is ₹500. Follow-ups within 7 days are free.",
+        "source": "Source: Fee list, April"
+      },
+      {
+        "q": "Can I book for tomorrow morning?",
+        "a": "Yes. Tomorrow has slots at 10:30 and 11:15 am. Shall I book one and send a WhatsApp reminder?",
+        "source": "Source: Appointment calendar"
+      },
+      {
+        "q": "I have chest pain, what should I take?",
+        "a": "I can't give medical advice. If this is an emergency, call 108 now. I'm alerting the clinic staff to call you back.",
+        "source": "Handed over to staff"
+      }
+    ]
+  },
+  "services": {
+    "title": "Everything we build",
+    "lead": "Ten services in three groups. Each one starts from the leak it plugs."
+  },
+  "how": {
+    "title": "How we work",
+    "steps": [
+      {
+        "name": "Free consultation",
+        "text": "We look at your daily work and rank every leak in rupees per month."
+      },
+      {
+        "name": "Build and pilot",
+        "text": "We build the fix for the biggest leak and run a small pilot on the channels you already use."
+      },
+      {
+        "name": "Measure and grow",
+        "text": "You see bookings, hours saved and money recovered. If it pays, we move to the next leak."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions owners ask",
+    "items": [
+      {
+        "q": "How long does a build take?",
+        "a": "It depends on how many systems the build connects to. You get a timeline in writing before work starts."
+      },
+      {
+        "q": "Do the bots work in Telugu and Hindi?",
+        "a": "Yes. Chatbots, WhatsApp bots and calling agents work in English, Telugu and Hindi."
+      },
+      {
+        "q": "Who owns the data?",
+        "a": "You do. Conversation logs stay under your control, and bots hand over to your staff when it matters."
+      },
+      {
+        "q": "What happens after the pilot?",
+        "a": "We show you the numbers. You decide whether to keep it, change it or move to the next leak."
+      },
+      {
+        "q": "Do I need DeskBuddy?",
+        "a": "No. DeskBuddy is an optional add-on for owners who want to ask questions about all their KNETRA services in one place."
+      }
+    ]
+  },
+  "close": {
+    "title": "Tell us where it hurts.",
+    "lead": "Share one process that eats your time or money. We reply personally.",
+    "book": "Book a free consultation",
+    "whatsapp": "Chat on WhatsApp"
+  },
+  "contact": {
+    "metaTitle": "Contact KNETRA | Book a free consultation",
+    "title": "Book a free consultation",
+    "lead": "Tell us about one process that costs you time or money. We reply personally.",
+    "name": "Your name",
+    "business": "Business name and type",
+    "phone": "Phone or WhatsApp number",
+    "service": "What are you interested in?",
+    "notSure": "Not sure yet",
+    "message": "What manual work or lost revenue bothers you most?",
+    "send": "Send message",
+    "sending": "Sending…",
+    "sentTitle": "Message sent.",
+    "sentText": "Thank you. We will reply personally.",
+    "error": "The message could not be sent. Please try again, or message us on WhatsApp.",
+    "required": "Please fill in this field.",
+    "direct": "Or reach us directly"
+  },
+  "offer": {
+    "problemTitle": "Sound familiar?",
+    "servicesTitle": "What we build",
+    "howTitle": "How it works",
+    "demoTitle": "See it work",
+    "priceTitle": "Price",
+    "priceLead": "Every quote is worked out from your own numbers in a free consultation."
+  },
+  "offers": {
+    "ai-agents": {
+      "metaTitle": "AI agents: chatbots, WhatsApp bots and calling agents | KNETRA",
+      "title": "AI agents that answer, call and book for you.",
+      "lead": "Chatbots, WhatsApp bots and calling agents that work day and night in English, Telugu and Hindi, and hand over to your staff when it matters.",
+      "problems": [
+        "Your team answers the same ten questions all day.",
+        "Calls after 7 pm go unanswered, and those customers go elsewhere.",
+        "Someone phones hundreds of members one by one for reminders and renewals."
+      ],
+      "steps": [
+        {
+          "name": "Collect what you know",
+          "text": "We gather your FAQs, documents, price lists and call scripts."
+        },
+        {
+          "name": "Build the agent",
+          "text": "On your website, WhatsApp or phone line, in the languages your customers speak."
+        },
+        {
+          "name": "Pilot and hand over",
+          "text": "Real customers use it for a few weeks. Your staff take over any conversation the agent should not handle."
+        }
+      ],
+      "includes": [
+        "Setup on your website, WhatsApp or phone line",
+        "English, Telugu and Hindi",
+        "Hand-over to your staff",
+        "Conversation logs you control"
+      ],
+      "whatsapp": "Hi KNETRA, I'm interested in AI agents"
+    },
+    "automation": {
+      "metaTitle": "Workflow automation for Tally, Excel and WhatsApp | KNETRA",
+      "title": "Stop retyping. Stop chasing.",
+      "lead": "We start with a free leak audit of your daily work, then automate the task that costs you the most.",
+      "problems": [
+        "Orders arrive on WhatsApp or PDF and get retyped into Tally or Excel.",
+        "Someone chases late payments by hand every week.",
+        "Reports are copied between sheets before every meeting."
+      ],
+      "steps": [
+        {
+          "name": "Free leak audit",
+          "text": "We sit with your team, list the manual work and rank each task in rupees per month."
+        },
+        {
+          "name": "Automate the top leak",
+          "text": "We connect the tools you already use, so the work happens without anyone retyping it."
+        },
+        {
+          "name": "Measure hours saved",
+          "text": "You see the hours and money saved. If it pays, we move to the next leak."
+        }
+      ],
+      "includes": [
+        "Free leak audit of your daily work",
+        "Works with the tools you already use, like Tally, Excel and WhatsApp"
+      ],
+      "whatsapp": "Hi KNETRA, I'd like a free leak audit"
+    },
+    "creative-web": {
+      "metaTitle": "Video editing, graphic design and websites | KNETRA",
+      "title": "Videos, designs and websites that bring customers in.",
+      "lead": "Edited videos for ads and reels, graphics for social media, and fast websites that turn visitors into enquiries.",
+      "problems": [
+        "Your business looks smaller online than it really is.",
+        "Posts go out late or not at all because nobody has time to design them.",
+        "Your website is slow on phones and nobody enquires through it."
+      ],
+      "steps": [
+        {
+          "name": "Brief",
+          "text": "Tell us what you sell, who buys it and what you want people to do."
+        },
+        {
+          "name": "First drafts",
+          "text": "We send drafts quickly so you can react to something real."
+        },
+        {
+          "name": "Final files",
+          "text": "You get finished files ready to post, print or publish."
+        }
+      ],
+      "includes": [
+        "Files sized for Instagram, WhatsApp and print",
+        "Mobile-first websites with an enquiry form"
+      ],
+      "whatsapp": "Hi KNETRA, I'm interested in videos, design or a website"
+    },
+    "deskbuddy": {
+      "metaTitle": "DeskBuddy: one assistant for all your KNETRA services | KNETRA",
+      "title": "DeskBuddy: ask about all your services in one place.",
+      "lead": "An optional add-on. DeskBuddy connects to the KNETRA services you already pay for and answers your questions about them in plain words.",
+      "problems": [
+        "Your bots, calls and automations each live in a different place.",
+        "Getting a simple number means opening three dashboards.",
+        "You want answers, not reports."
+      ],
+      "steps": [
+        {
+          "name": "Connect",
+          "text": "We link DeskBuddy to the KNETRA services you use."
+        },
+        {
+          "name": "Ask",
+          "text": "Type a question on WhatsApp or the web, in English, Telugu or Hindi."
+        },
+        {
+          "name": "Get the answer",
+          "text": "DeskBuddy replies with the numbers, straight from your services."
+        }
+      ],
+      "includes": [
+        "Works with the KNETRA services you use",
+        "Ask on WhatsApp or the web",
+        "Optional: your other services work without it"
+      ],
+      "whatsapp": "Hi KNETRA, tell me about DeskBuddy"
+    },
+    "custom-builds": {
+      "metaTitle": "Custom builds: we build it from scratch | KNETRA",
+      "title": "Tell us the problem. We build it from scratch.",
+      "lead": "When nothing off the shelf fits, we design and build the service your business needs.",
+      "problems": [
+        "You have tried tools that almost fit, then worked around them.",
+        "Your process is specific to your business.",
+        "You need several systems to talk to each other."
+      ],
+      "steps": [
+        {
+          "name": "Free consultation",
+          "text": "We learn how the work is done today and what it costs you."
+        },
+        {
+          "name": "Fixed proposal",
+          "text": "You get a written scope, timeline and price before any build starts."
+        },
+        {
+          "name": "Build and pilot",
+          "text": "We build it, run a pilot with your team, and fix what the pilot shows."
+        }
+      ],
+      "includes": [
+        "Written scope and price before work starts",
+        "Pilot with your team"
+      ],
+      "whatsapp": "Hi KNETRA, I need something custom built"
+    }
+  },
+  "price": {
+    "from": "From",
+    "perMonth": "/ month",
+    "customQuote": "Custom quote",
+    "ask": "Ask for a quote"
+  },
+  "deskBuddy": {
+    "title": "Add DeskBuddy",
+    "optional": "Optional add-on",
+    "text": "One assistant that knows every KNETRA service you use. Ask it anything about them.",
+    "examples": [
+      "How many of the 500 calls were answered?",
+      "What did patients ask the bot this week?",
+      "Which WhatsApp orders are still pending?"
+    ],
+    "link": "How DeskBuddy works"
+  },
+  "footer": {
+    "tagline": "The eye that spots what's costing you.",
+    "customBuilds": "Custom builds",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "place": "Hyderabad, India"
+  },
+  "whatsapp": "WhatsApp us",
+  "useCase": {
+    "homeTitle": "Problems we solve",
+    "homeLead": "Start from the problem, not the technology.",
+    "problemTitle": "The problem",
+    "fixTitle": "How we fix it",
+    "servicesTitle": "Services used"
+  },
+  "useCases": {
+    "call-500-members": {
+      "metaTitle": "AI calling agent to call hundreds of members | KNETRA",
+      "title": "Call 500 members without anyone picking up a phone.",
+      "lead": "An AI calling agent phones your members for reminders, renewals and invites, in Telugu, Hindi or English, and writes down every answer.",
+      "problem": "Every month someone on your team spends days phoning members one by one. Many don't pick up, the answers end up in a notebook, and nobody knows who still needs a call back.",
+      "steps": [
+        {
+          "name": "Write the call script",
+          "text": "We turn what your staff say on the phone into a short script, in the languages your members speak."
+        },
+        {
+          "name": "Agent makes the calls",
+          "text": "The calling agent works through your list, retries missed calls and records each answer."
+        },
+        {
+          "name": "You get the list",
+          "text": "A sheet shows who said yes, who said no and who wants a person to call back."
+        }
+      ],
+      "services": [
+        "AI calling agents",
+        "WhatsApp bots"
+      ],
+      "demo": null,
+      "whatsapp": "Hi KNETRA, I need to call a lot of members"
+    },
+    "hospital-ai-assistant": {
+      "metaTitle": "AI assistant for hospitals and clinics | KNETRA",
+      "title": "An AI assistant for your hospital front desk.",
+      "lead": "It answers timing, fee and appointment questions from your own documents, on WhatsApp and your website, and hands medical questions to your staff.",
+      "problem": "Your front desk answers the same questions about timings, fees and appointments all day, while patients wait in line and the phone keeps ringing.",
+      "steps": [
+        {
+          "name": "Load your documents",
+          "text": "Timings, fee lists, doctor schedules and FAQs become the assistant's knowledge."
+        },
+        {
+          "name": "Answer on WhatsApp and web",
+          "text": "Patients get answers in English, Telugu or Hindi, with the source shown."
+        },
+        {
+          "name": "Hand over when it matters",
+          "text": "The assistant never gives medical advice. Those questions go straight to your staff."
+        }
+      ],
+      "services": [
+        "RAG chatbots",
+        "WhatsApp bots",
+        "AI chatbots"
+      ],
+      "demo": "chat",
+      "whatsapp": "Hi KNETRA, I'm interested in an AI assistant for our hospital"
+    },
+    "whatsapp-orders-to-tally": {
+      "metaTitle": "WhatsApp orders straight into Tally | KNETRA",
+      "title": "WhatsApp orders straight into Tally.",
+      "lead": "Orders that arrive as WhatsApp messages or PDFs are read and entered for you, so nobody retypes them.",
+      "problem": "Orders come in on WhatsApp, as messages, photos and PDFs. Someone retypes each one into Tally or Excel, mistakes creep in, and the backlog grows on busy days.",
+      "steps": [
+        {
+          "name": "Map your order format",
+          "text": "We look at the orders you actually receive and the fields Tally or Excel needs."
+        },
+        {
+          "name": "Automate the entry",
+          "text": "Each order is read and entered automatically. Anything unclear is flagged for a person."
+        },
+        {
+          "name": "Check the time saved",
+          "text": "You see how many orders went through and the hours your team got back."
+        }
+      ],
+      "services": [
+        "WhatsApp bots",
+        "Workflow automations"
+      ],
+      "demo": "calculator",
+      "whatsapp": "Hi KNETRA, I want WhatsApp orders to go into Tally automatically"
+    },
+    "never-miss-a-lead": {
+      "metaTitle": "Reply to every enquiry in minutes | KNETRA",
+      "title": "Never miss a lead again.",
+      "lead": "Every enquiry from your website, WhatsApp or ads gets a reply in minutes, day or night, and the serious ones reach your team first.",
+      "problem": "Enquiries arrive while your team is busy or after hours. By the time someone replies the next day, the customer has already bought elsewhere.",
+      "steps": [
+        {
+          "name": "Connect your channels",
+          "text": "Website forms, WhatsApp and ad enquiries all reach one assistant."
+        },
+        {
+          "name": "Reply and qualify",
+          "text": "It answers right away, asks the questions your team would ask and books a call."
+        },
+        {
+          "name": "Hand the best ones over",
+          "text": "Your team gets the serious enquiries first, with the details already collected."
+        }
+      ],
+      "services": [
+        "AI chatbots",
+        "WhatsApp bots"
+      ],
+      "demo": "calculator",
+      "whatsapp": "Hi KNETRA, I keep missing enquiries"
+    }
+  },
+  "pricing": {
+    "metaTitle": "Pricing | KNETRA",
+    "title": "Pricing",
+    "lead": "Every quote is worked out from your own numbers in a free consultation. Starting prices are listed here as soon as they are set.",
+    "addOnTitle": "Optional add-on",
+    "addOnIncludes": [
+      "One assistant for all your KNETRA services",
+      "Ask on WhatsApp or the web",
+      "Your other services work without it"
+    ],
+    "pilotTitle": "Start with a pilot",
+    "pilotText": "Not sure yet? We build a fix for one leak, run it with your team for a short pilot, and show you the numbers before you commit to more.",
+    "customTitle": "Something else?",
+    "customText": "If your problem doesn't fit a group, we build it from scratch. You get a written scope and price before any work starts.",
+    "customLink": "Custom builds"
+  },
+  "about": {
+    "metaTitle": "About KNETRA | Built in Hyderabad",
+    "title": "The eye that spots what's costing you.",
+    "lead": "Netra means eye. Most small businesses lose real money on work a machine could do, and nobody has time to look. We look, we measure, then we fix it.",
+    "founderTitle": "Who builds it",
+    "founder": "KNETRA was founded by Karthikeya, a computer science student and backend and AI engineer, building from Hyderabad.",
+    "promisesTitle": "What we promise",
+    "promises": [
+      {
+        "name": "Results you can measure",
+        "text": "Every project starts and ends with numbers in rupees and hours."
+      },
+      {
+        "name": "Your language, your channel",
+        "text": "WhatsApp, calls and Excel, in English, Telugu and Hindi."
+      },
+      {
+        "name": "Care with your data",
+        "text": "No medical advice from bots, a clear hand-over to your staff, and conversation logs you control."
+      }
+    ]
+  },
+  "privacy": {
+    "metaTitle": "Privacy | KNETRA",
+    "title": "Privacy",
+    "updated": "Last updated: 21 November 2026",
+    "sections": [
+      {
+        "h": "What we collect",
+        "p": [
+          "When you send the contact form, we receive your name, business name, phone number, the service you chose and your message. The form is delivered to our email through Formspree, a form service.",
+          "The leak calculator runs only in your browser. The numbers you type are not sent anywhere.",
+          "When you tap a WhatsApp or email link, the conversation happens in that app and is covered by its own privacy terms."
+        ]
+      },
+      {
+        "h": "How we use it",
+        "p": [
+          "We use your details only to reply to you and to prepare your consultation. We do not sell or share them for marketing."
+        ]
+      },
+      {
+        "h": "Bots we build for you",
+        "p": [
+          "For the chatbots, WhatsApp bots and calling agents we build, you control the conversation logs. Our bots do not give medical advice and hand over to your staff when a person is needed."
+        ]
+      },
+      {
+        "h": "Hosting",
+        "p": [
+          "The website's hosting provider may keep basic technical logs, such as IP addresses, to run and protect the site."
+        ]
+      },
+      {
+        "h": "Analytics",
+        "p": [
+          "We use Vercel Web Analytics to count page visits, contact form sends and taps on WhatsApp links. It uses no cookies and does not identify you."
+        ]
+      },
+      {
+        "h": "Your choices",
+        "p": [
+          "To see, correct or delete the details you sent us, email kompellakartikeya@gmail.com and we will act on it."
+        ]
+      }
+    ]
+  },
+  "groupNames": {
+    "ai-agents": "AI agents",
+    "automation": "Automation",
+    "creative-web": "Creative & web"
+  },
+  "servicePitches": {
+    "AI chatbots": "Answers customer questions on your website, day and night.",
+    "RAG chatbots": "Answers from your own documents, like a hospital's policies and FAQs.",
+    "AI calling agents": "Calls hundreds of people in Telugu, Hindi or English and logs every answer.",
+    "WhatsApp bots": "Bookings, orders and reminders on the app your customers already use.",
+    "Multi-agent orchestration": "Several AI agents working together on one workflow built for you.",
+    "Workflow automations": "Removes repetitive manual work, like retyping orders into Tally.",
+    "Custom builds": "Tell us the problem and we build the service from scratch.",
+    "Video editing": "Edited videos for ads, reels and product demos.",
+    "Graphic design": "Posters, social posts and brand assets.",
+    "Websites": "Fast, mobile-first business websites."
+  }
+}

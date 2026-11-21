@@ -1,0 +1,44 @@
+.button {
+  position: fixed;
+  right: var(--space-4);
+  bottom: max(var(--space-4), env(safe-area-inset-bottom));
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 52px;
+  padding: 0 var(--space-5) 0 var(--space-4);
+  background: var(--glass-strong);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+  backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+  border: 1px solid var(--glass-edge);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow);
+  color: var(--plugged);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.label {
+  color: var(--ink);
+}
+
+@media (max-width: 480px) {
+  .button {
+    padding: 0 var(--space-4);
+  }
+
+  .label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}

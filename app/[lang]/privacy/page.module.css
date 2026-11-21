@@ -1,0 +1,23 @@
+.page {
+  margin-top: var(--space-8);
+}
+
+.updated {
+  margin-top: var(--space-3);
+  color: var(--ink-soft);
+}
+
+.page section {
+  margin-top: var(--space-7);
+}
+
+.page h2 {
+  font-size: 1.5rem;
+  font-weight: 650;
+}
+
+.page section p {
+  max-width: var(--measure);
+  margin-top: var(--space-3);
+  color: var(--ink-soft);
+}

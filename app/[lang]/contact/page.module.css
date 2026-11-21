@@ -1,0 +1,66 @@
+.main {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: start;
+  gap: var(--space-7);
+  width: min(1160px, calc(100% - 2 * var(--space-4)));
+  margin: var(--space-8) auto 0;
+}
+
+.title {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 650;
+  font-stretch: 82%;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.lead {
+  margin-top: var(--space-4);
+  max-width: 44ch;
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+}
+
+.directTitle {
+  margin-top: var(--space-7);
+  font-size: 1.1rem;
+  font-weight: 650;
+}
+
+.direct {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  list-style: none;
+}
+
+.direct a {
+  display: grid;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid rgb(35 28 21 / 0.12);
+  font-weight: 600;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.direct a:hover {
+  color: var(--accent);
+}
+
+.direct span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.panel {
+  padding: clamp(var(--space-5), 5vw, var(--space-7));
+}
+
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}

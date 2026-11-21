@@ -1,0 +1,66 @@
+.head {
+  margin-top: var(--space-8);
+}
+
+.head h1 {
+  max-width: 16ch;
+}
+
+.lead {
+  max-width: 40ch;
+  margin-top: var(--space-5);
+  font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+  line-height: 1.35;
+}
+
+.founder {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: var(--space-7);
+  margin-top: var(--space-9);
+}
+
+.founder p {
+  max-width: 48ch;
+  font-size: 1.2rem;
+  color: var(--ink-soft);
+}
+
+.promisesWrap {
+  margin-top: var(--space-9);
+}
+
+.promises {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+  list-style: none;
+}
+
+.promises li {
+  padding-top: var(--space-5);
+  border-top: 2px solid var(--ink);
+}
+
+.promises h3 {
+  font-size: 1.3rem;
+  font-weight: 650;
+}
+
+.promises p {
+  margin-top: var(--space-2);
+  color: var(--ink-soft);
+}
+
+@media (max-width: 900px) {
+  .founder,
+  .promises {
+    grid-template-columns: 1fr;
+  }
+
+  .founder {
+    gap: var(--space-3);
+    margin-top: var(--space-8);
+  }
+}

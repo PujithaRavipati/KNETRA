@@ -1,0 +1,13 @@
+/* The DOM half of the lens: really changes the page under the glass, which WebGL cannot see. */
+.tint {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 29;
+  border-radius: 50%;
+  pointer-events: none;
+  -webkit-backdrop-filter: brightness(1.08) contrast(1.08) saturate(1.25);
+  backdrop-filter: brightness(1.08) contrast(1.08) saturate(1.25);
+  box-shadow: inset 0 0 18px rgb(255 255 255 / 0.55);
+  will-change: transform;
+}

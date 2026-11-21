@@ -1,0 +1,73 @@
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  padding: var(--space-6);
+  background: rgb(255 252 246 / 0.32);
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  backdrop-filter: blur(var(--glass-blur));
+  border: 1px dashed rgb(35 28 21 / 0.25);
+  border-radius: var(--radius);
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 1.35rem;
+  font-weight: 650;
+}
+
+.badge {
+  padding: 2px var(--space-3);
+  border: 1px solid rgb(35 28 21 / 0.2);
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.body {
+  margin-top: var(--space-3);
+  color: var(--ink-soft);
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--accent);
+}
+
+/* example questions drawn as chat bubbles the customer would type */
+.questions {
+  display: grid;
+  gap: var(--space-2);
+  align-content: center;
+  list-style: none;
+}
+
+.questions li {
+  justify-self: end;
+  max-width: 34ch;
+  padding: var(--space-2) var(--space-4);
+  background: var(--glass-strong);
+  border: 1px solid var(--glass-edge);
+  border-radius: 18px 18px 4px 18px;
+  box-shadow: 0 4px 12px rgb(92 64 36 / 0.08);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 760px) {
+  .box {
+    grid-template-columns: 1fr;
+    padding: var(--space-5);
+  }
+}

@@ -1,0 +1,62 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  padding: var(--space-6);
+}
+
+.name {
+  font-size: 1.35rem;
+  font-weight: 650;
+}
+
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.from {
+  color: var(--ink-soft);
+}
+
+.amount {
+  color: var(--accent);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 650;
+  font-stretch: 85%;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.includes {
+  display: grid;
+  gap: var(--space-2);
+  align-content: start;
+  list-style: none;
+  flex: 1;
+}
+
+.includes li {
+  display: flex;
+  gap: var(--space-2);
+  color: var(--ink-soft);
+}
+
+.quote {
+  font-size: 1.5rem;
+  font-weight: 650;
+  line-height: 1.1;
+}
+
+/* green is kept for "plugged"; feature ticks stay quiet */
+.includes svg {
+  flex: none;
+  margin-top: 0.2em;
+  color: var(--ink-soft);
+}
+
+.card > a {
+  align-self: flex-start;
+}

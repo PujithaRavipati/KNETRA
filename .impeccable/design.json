@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-21T00:00:00Z",
+  "title": "Design System: KNETRA",
+  "extensions": {
+    "colorMeta": {
+      "beige": { "role": "neutral", "displayName": "Beige", "canonical": "#efe7da", "tonalRamp": ["#2a241c", "#4a4134", "#6d6151", "#918470", "#b5a892", "#d4c9b6", "#efe7da", "#f8f4ed"] },
+      "sand": { "role": "neutral", "displayName": "Sand", "canonical": "#e2d6c3", "tonalRamp": ["#2b2419", "#4b4030", "#6f604b", "#938268", "#b8a78b", "#cdbda5", "#e2d6c3", "#f3ede3"] },
+      "sand-deep": { "role": "neutral", "displayName": "Deep Sand", "canonical": "#cdbda5" },
+      "glass": { "role": "neutral", "displayName": "Glass", "canonical": "rgb(255 252 246 / 0.38)" },
+      "glass-strong": { "role": "neutral", "displayName": "Strong Glass", "canonical": "rgb(255 252 246 / 0.58)" },
+      "glass-edge": { "role": "neutral", "displayName": "Glass Edge", "canonical": "rgb(255 255 255 / 0.75)" },
+      "ink": { "role": "neutral", "displayName": "Ledger Ink", "canonical": "#231c15", "tonalRamp": ["#231c15", "#3a3027", "#5e5144", "#7d6f61", "#9d9082", "#bdb2a6", "#dcd4ca", "#f3efe9"] },
+      "ink-soft": { "role": "neutral", "displayName": "Soft Ink", "canonical": "#5e5144" },
+      "accent": { "role": "primary", "displayName": "Fired Clay", "canonical": "#b4532a", "tonalRamp": ["#3a1a0c", "#5f2b14", "#873c1c", "#b4532a", "#cc744f", "#df9b7d", "#efc4b0", "#faeae2"] },
+      "accent-deep": { "role": "primary", "displayName": "Deep Clay", "canonical": "#9e4722" },
+      "accent-ink": { "role": "primary", "displayName": "Cream Ink", "canonical": "#fffaf3" },
+      "plugged": { "role": "secondary", "displayName": "Plugged Green", "canonical": "#2f7a4b", "tonalRamp": ["#0e2717", "#18412a", "#235e3b", "#2f7a4b", "#4f9a6a", "#7ebb94", "#b4dbc2", "#e5f3ea"] },
+      "error": { "role": "neutral", "displayName": "Error Red", "canonical": "#b3261e" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Page titles and the hero line; condensed to 82% width." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings, balanced wrap." },
+      "value": { "displayName": "Value", "purpose": "Live rupee totals in Fired Clay, tabular figures." },
+      "title": { "displayName": "Title", "purpose": "Card names, step and promise headings." },
+      "body": { "displayName": "Body", "purpose": "Running text, 68ch measure." },
+      "label": { "displayName": "Label", "purpose": "Outline tags, language switcher, small notes. Sentence case." }
+    },
+    "shadows": [
+      { "name": "panel-float", "value": "0 12px 40px rgb(92 64 36 / 0.14), 0 2px 6px rgb(92 64 36 / 0.08)", "purpose": "Every glass panel, the nav bar, the WhatsApp button." },
+      { "name": "clay-glow", "value": "0 8px 22px rgb(180 83 42 / 0.32)", "purpose": "Primary action at rest." },
+      { "name": "clay-glow-hover", "value": "0 12px 28px rgb(180 83 42 / 0.38)", "purpose": "Primary action on hover." },
+      { "name": "bubble-lift", "value": "0 4px 12px rgb(92 64 36 / 0.08)", "purpose": "Example chat bubbles." },
+      { "name": "field-focus", "value": "0 0 0 3px rgb(180 83 42 / 0.2)", "purpose": "Input focus ring, with clay border." },
+      { "name": "glass-blur", "value": "blur(20px) saturate(140%)", "purpose": "backdrop-filter on every glass surface." }
+    ],
+    "motion": [
+      { "name": "ease-out-expo", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Button lift (0.25s), lens reveal (0.7s), magnify (0.35s), message entry (0.4s)." },
+      { "name": "lens-reveal", "value": "filter/opacity 0.7s; blur(7px) opacity 0.5 until revealed", "purpose": "Values hidden under data-lens-stop until the lens passes." },
+      { "name": "lens-magnify", "value": "transform: scale(1.1) 0.35s", "purpose": "data-lens-value while its stop is data-under; never for data-lens-value=\"long\"." },
+      { "name": "reduced-motion", "value": "animation/transition none", "purpose": "Lens disabled and all values shown." }
+    ],
+    "breakpoints": [
+      { "name": "phone", "value": "480px" },
+      { "name": "panel-compact", "value": "640px" },
+      { "name": "stack-sm", "value": "760px" },
+      { "name": "stack", "value": "900px" },
+      { "name": "nav-collapse", "value": "1020px" },
+      { "name": "container", "value": "1160px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one primary action per view: book, ask for a quote.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Book a free consultation</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 24px; border-radius: 999px; background: var(--accent, #b4532a); color: var(--accent-ink, #fffaf3); font-weight: 600; text-decoration: none; box-shadow: 0 8px 22px rgb(180 83 42 / 0.32); transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s, box-shadow 0.25s; } .ds-btn-primary:hover { background: var(--accent-deep, #9e4722); box-shadow: 0 12px 28px rgb(180 83 42 / 0.38); transform: translateY(-2px); } .ds-btn-primary:active { transform: translateY(0); } .ds-btn-primary:focus-visible { outline: 2px solid var(--accent, #b4532a); outline-offset: 3px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Glass pill for the second action (Try the demo, Ask for a quote on an add-on).",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#\">Try the demo</a>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 24px; border-radius: 999px; background: var(--glass-strong, rgb(255 252 246 / 0.58)); border: 1px solid var(--glass-edge, rgb(255 255 255 / 0.75)); color: var(--ink, #231c15); font-weight: 600; text-decoration: none; transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s; } .ds-btn-secondary:hover { background: rgb(255 252 246 / 0.95); transform: translateY(-2px); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--accent, #b4532a); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ruled Service Group",
+      "kind": "card",
+      "refersTo": "glass-panel",
+      "description": "One glass panel with a heading row (live leak in clay, Custom quote in ink) and ruled service rows.",
+      "html": "<section class=\"ds-group\"><div class=\"ds-group-head\"><h3>AI agents</h3><span class=\"ds-quote\">Custom quote</span></div><p class=\"ds-leak\">Calls missed after 7 pm <b>₹18,000 / month</b> <span class=\"ds-tag\">Illustrative</span></p><ul><li><b>AI chatbots</b><span>Answers customer questions on your website, day and night.</span></li><li><b>WhatsApp bots</b><span>Bookings, orders and reminders on the app your customers already use.</span></li></ul></section>",
+      "css": ".ds-group { padding: 32px; background: var(--glass, rgb(255 252 246 / 0.38)); -webkit-backdrop-filter: blur(20px) saturate(140%); backdrop-filter: blur(20px) saturate(140%); border: 1px solid var(--glass-edge, rgb(255 255 255 / 0.75)); border-radius: 22px; box-shadow: 0 12px 40px rgb(92 64 36 / 0.14), 0 2px 6px rgb(92 64 36 / 0.08); color: var(--ink, #231c15); } .ds-group-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; } .ds-group h3 { font-size: 2rem; font-weight: 650; font-stretch: 90%; line-height: 1.1; } .ds-quote { font-weight: 650; } .ds-leak { margin-top: 12px; color: var(--ink-soft, #5e5144); } .ds-leak b { color: var(--accent, #b4532a); font-weight: 650; font-variant-numeric: tabular-nums; } .ds-tag { margin-left: 16px; padding: 1px 8px; border: 1px solid rgb(35 28 21 / 0.2); border-radius: 999px; font-size: 0.75rem; font-weight: 600; } .ds-group ul { margin: 24px 0 0; padding: 0; list-style: none; } .ds-group li { display: grid; grid-template-columns: minmax(0, 14rem) minmax(0, 1fr); gap: 4px 24px; padding: 12px 0; border-top: 1px solid rgb(35 28 21 / 0.1); } .ds-group li span { color: var(--ink-soft, #5e5144); }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Calculator and contact inputs.",
+      "html": "<label class=\"ds-field\">Missed calls per day<input type=\"number\" value=\"12\"></label>",
+      "css": ".ds-field { display: grid; gap: 8px; font-weight: 500; font-size: 0.95rem; color: var(--ink, #231c15); } .ds-field input { min-height: 48px; padding: 12px 16px; background: var(--glass-strong, rgb(255 252 246 / 0.58)); border: 1px solid rgb(35 28 21 / 0.14); border-radius: 14px; font: inherit; font-size: 1.05rem; font-variant-numeric: tabular-nums; color: inherit; } .ds-field input:focus { outline: none; border-color: var(--accent, #b4532a); box-shadow: 0 0 0 3px rgb(180 83 42 / 0.2); } .ds-field input:user-invalid { border-color: #b3261e; }"
+    },
+    {
+      "name": "Reply Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Demo chat quick replies.",
+      "html": "<button class=\"ds-chip\">Do you deliver on Sunday?</button>",
+      "css": ".ds-chip { min-height: 40px; padding: 8px 16px; background: var(--glass, rgb(255 252 246 / 0.38)); border: 1px solid rgb(35 28 21 / 0.16); border-radius: 999px; font: inherit; font-size: 0.95rem; color: var(--ink, #231c15); cursor: pointer; transition: background-color 0.2s, border-color 0.2s; } .ds-chip:hover { background: #fff; border-color: var(--accent, #b4532a); } .ds-chip:focus-visible { outline: 2px solid var(--accent, #b4532a); outline-offset: 3px; }"
+    },
+    {
+      "name": "Floating Nav",
+      "kind": "nav",
+      "refersTo": "nav-bar",
+      "description": "Sticky glass pill with wordmark, links, language switcher and the primary action.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-logo\">KNETRA</span><a href=\"#\">AI agents</a><a href=\"#\" aria-current=\"page\">Pricing</a><span class=\"ds-langs\"><b>EN</b><i>తె</i><i>हि</i></span><a class=\"ds-book\" href=\"#\">Book a consultation</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 24px; padding: 8px 8px 8px 24px; background: var(--glass-strong, rgb(255 252 246 / 0.58)); -webkit-backdrop-filter: blur(20px) saturate(140%); backdrop-filter: blur(20px) saturate(140%); border: 1px solid var(--glass-edge, rgb(255 255 255 / 0.75)); border-radius: 999px; box-shadow: 0 12px 40px rgb(92 64 36 / 0.14), 0 2px 6px rgb(92 64 36 / 0.08); } .ds-logo { font-weight: 700; font-stretch: 110%; letter-spacing: 0.18em; margin-right: auto; } .ds-nav > a:not(.ds-book) { color: var(--ink-soft, #5e5144); font-weight: 500; font-size: 0.95rem; text-decoration: none; } .ds-nav > a:hover, .ds-nav > a[aria-current] { color: var(--ink, #231c15); } .ds-langs { display: flex; gap: 2px; padding: 3px; background: rgb(35 28 21 / 0.06); border-radius: 999px; font-size: 0.85rem; font-weight: 600; } .ds-langs b, .ds-langs i { font-style: normal; min-width: 34px; height: 30px; display: grid; place-items: center; border-radius: 999px; color: var(--ink-soft, #5e5144); } .ds-langs b { background: var(--glass-strong, rgb(255 252 246 / 0.58)); color: var(--ink, #231c15); box-shadow: 0 1px 3px rgb(92 64 36 / 0.15); } .ds-book { display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; border-radius: 999px; background: var(--accent, #b4532a); color: var(--accent-ink, #fffaf3); font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: background-color 0.25s; } .ds-book:hover { background: var(--accent-deep, #9e4722); }"
+    },
+    {
+      "name": "Leak Total",
+      "kind": "custom",
+      "refersTo": "glass-panel-strong",
+      "description": "Calculator result: the live rupee total in Fired Clay over ruled breakdown rows.",
+      "html": "<div class=\"ds-result\"><span class=\"ds-label\">You may be losing</span><span class=\"ds-total\">₹42,600 <small>/ month</small></span><dl><div><dt>Missed calls</dt><dd>₹18,000</dd></div><div><dt>Manual entry</dt><dd>₹24,600</dd></div></dl></div>",
+      "css": ".ds-result { display: flex; flex-direction: column; gap: 16px; padding: 32px; background: var(--glass-strong, rgb(255 252 246 / 0.58)); -webkit-backdrop-filter: blur(20px) saturate(140%); backdrop-filter: blur(20px) saturate(140%); border: 1px solid var(--glass-edge, rgb(255 255 255 / 0.75)); border-radius: 22px; box-shadow: 0 12px 40px rgb(92 64 36 / 0.14), 0 2px 6px rgb(92 64 36 / 0.08); color: var(--ink, #231c15); } .ds-label { color: var(--ink-soft, #5e5144); font-weight: 600; } .ds-total { color: var(--accent, #b4532a); font-size: 4rem; font-weight: 650; font-stretch: 85%; line-height: 1; font-variant-numeric: tabular-nums; } .ds-total small { font-size: 1rem; font-weight: 500; color: var(--ink-soft, #5e5144); } .ds-result dl { display: grid; gap: 8px; margin: 0; } .ds-result dl div { display: flex; justify-content: space-between; padding-top: 8px; border-top: 1px solid rgb(35 28 21 / 0.1); } .ds-result dt { color: var(--ink-soft, #5e5144); } .ds-result dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Jeweller's Loupe on the Ledger",
+    "overview": "A warm beige-to-sand ground ruled like an account book, with frosted glass panels floating over it, and one real glass lens moving down the page. What passes under the lens shows its hidden rupee cost. Everything else is quiet so the lens and the numbers it finds get the attention.\n\nDensity is calm and editorial: one wide column (1160px max), big condensed headlines, long ruled lists instead of card grids. Glass is the only material. The beige ground and ink type stay mostly neutral, and colour appears only where something costs money or something has been fixed.\n\nThe lens is the one 3D object and the signature. It needs a textured ground to refract, so the ledger rules stay fixed behind the scrolling glass. When reduced motion is on, or WebGL is missing, the lens is turned off and every value shows plainly.",
+    "keyCharacteristics": [
+      "Fixed ledger-rule ground (2px rules every 36px) under a 170deg beige-to-sand wash.",
+      "Frosted glass panels: translucent warm white, 20px blur at 140% saturation, crisp white 1px edge, soft warm two-layer shadow.",
+      "One warm accent, used only for live rupee/hour values and the primary action.",
+      "Anek variable sans across Latin, Telugu and Devanagari; headings condensed by the width axis.",
+      "Grouped content goes in ruled rows inside one panel, never in rows of equal cards."
+    ],
+    "rules": [
+      { "name": "The Leak-Only Accent Rule", "body": "Fired Clay marks only a live rupee or hour value, or the one primary action. A price you can't state yet (\"Custom quote\") is ink. If a clay element isn't money or the main action, it's wrong.", "section": "colors" },
+      { "name": "The Plugged Green Rule", "body": "Green means plugged. Feature ticks, checkmarks and decoration stay Soft Ink.", "section": "colors" },
+      { "name": "The Indic Breathing Rule", "body": "In Telugu and Hindi, h1 to h3 use line-height 1.35 and normal tracking. Their marks above and below the letter need the room, and negative tracking breaks conjuncts.", "section": "typography" },
+      { "name": "The Tabular Money Rule", "body": "Every rupee figure and numeric input uses tabular figures.", "section": "typography" },
+      { "name": "The Something-To-Frost Rule", "body": "Glass works only over texture. The ledger rules stay `background-attachment: fixed` behind the page, and no glass panel sits on a flat fill.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do put every frosted surface over the fixed ledger-rule ground (2px rules every 36px at 8% ink).",
+      "Do keep Fired Clay for live rupee/hour values and the primary action, and set unpriced \"Custom quote\" in ink.",
+      "Do keep green for the plugged state only, and set feature ticks in Soft Ink.",
+      "Do list grouped services as ruled rows inside one glass panel.",
+      "Do mark every figure the lens reveals with `data-lens-value`, its container with `data-lens-stop`, and use `\"long\"` for values too wide to magnify.",
+      "Do set Telugu and Hindi headings at line-height 1.35 with no negative tracking.",
+      "Do label illustrative numbers with an outline \"Illustrative\" tag next to the value."
+    ],
+    "donts": [
+      "Don't put services or features in rows of equal cards. Use ruled rows, or ordered lists joined by an ink top rule.",
+      "Don't add eyebrow or kicker labels above headings.",
+      "Don't use clay for decoration, ticks, links at rest, or prices that haven't been stated.",
+      "Don't add another 3D object, gradient orbs, or icon tiles; the lens is the only spectacle.",
+      "Don't hide values when reduced motion is on or WebGL is unavailable."
+    ]
+  }
+}

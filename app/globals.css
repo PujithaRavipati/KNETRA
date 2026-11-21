@@ -1,0 +1,123 @@
+:root {
+  /* ground: warm beige, deepening toward sand */
+  --beige: #efe7da;
+  --sand: #e2d6c3;
+  --sand-deep: #cdbda5;
+
+  /* glass */
+  --glass: rgb(255 252 246 / 0.38);
+  --glass-strong: rgb(255 252 246 / 0.58);
+  --glass-edge: rgb(255 255 255 / 0.75);
+  --glass-blur: 20px;
+
+  /* ink */
+  --ink: #231c15;
+  --ink-soft: #5e5144;
+
+  /* one warm accent for rupee values and the primary action; green only for "plugged" */
+  --accent: #b4532a;
+  --accent-deep: #9e4722;
+  --accent-ink: #fffaf3;
+  --plugged: #2f7a4b;
+
+  --radius: 22px;
+  --radius-pill: 999px;
+  --shadow: 0 12px 40px rgb(92 64 36 / 0.14), 0 2px 6px rgb(92 64 36 / 0.08);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 72px;
+  --space-9: 112px;
+
+  --font-sans: var(--font-anek-latin), var(--font-anek-telugu), var(--font-anek-devanagari), system-ui, sans-serif;
+  --measure: 68ch;
+
+  color-scheme: light;
+  accent-color: var(--accent);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: var(--sand);
+  scroll-padding-top: 100px;
+  scrollbar-color: var(--sand-deep) var(--beige);
+}
+
+body {
+  min-height: 100dvh;
+  /* faint ledger rules held still behind the page, so the glass panels have something to frost as they scroll past */
+  background:
+    repeating-linear-gradient(to bottom, transparent 0 34px, rgb(35 28 21 / 0.08) 34px 36px) fixed,
+    linear-gradient(170deg, var(--beige) 0%, var(--sand) 100%) fixed;
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  caret-color: var(--accent);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Telugu and Devanagari carry marks above and below the letter, so headings need
+   room between lines, and negative tracking breaks conjuncts. */
+:lang(te) :is(h1, h2, h3),
+:lang(hi) :is(h1, h2, h3) {
+  line-height: 1.35;
+  letter-spacing: normal;
+}
+
+/* Values hidden until the lens has passed over them; only while the lens is running. */
+[data-lens-value] {
+  display: inline-block;
+  transform-origin: left center;
+  transition:
+    filter 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* the glass magnifies what is under it */
+.lens-on [data-under] [data-lens-value]:not([data-lens-value="long"]) {
+  transform: scale(1.1);
+}
+
+.lens-on [data-lens-stop]:not([data-revealed]) [data-lens-value] {
+  filter: blur(7px);
+  opacity: 0.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
